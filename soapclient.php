@@ -1,5 +1,5 @@
 <?php
-require_once('./lib/nusoap.php');
+require_once './lib/nusoap.php';
 
 if(count($argv) === 1)
 {
@@ -8,7 +8,7 @@ if(count($argv) === 1)
 }
 
 // Esta es la dirección URL de su servidor de servicios web WSDL
-$wsdl = 'http://localhost/soap/soapserver.php?wsdl';
+$wsdl = 'http://localhost:8080?wsdl';
 
 // Crear objeto cliente
 $client = new nusoap_client($wsdl, 'wsdl');

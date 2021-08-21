@@ -1,12 +1,10 @@
 <?php
-require_once './response.php';
-require_once './config.php';
+require_once '../response.php';
 
 function getProductsByCategory(string $category_name)
 {
-  global $config;
   error_reporting(0);
-  $mysqli = new mysqli($config['DB_HOST'], $config['DB_USERNAME'], $config['DB_PASSWORD'], $config['DB_NAME']);
+  $mysqli = new mysqli($_ENV['DB_HOST'], $_ENV['DB_USERNAME'], $_ENV['DB_PASSWORD'], $_ENV['DB_NAME']);
   if ($mysqli->connect_error)
     return response_soap(false, 'Failed connection: ' . $mysqli->connect_error);
 
