@@ -4,26 +4,9 @@ Este servicio web de ejemplo, expone una función `getProductsByCategory` en la 
 
 ## Instalación
 
-Para probar esta implementación se necesita tener:
-
-- Apache HTTP
-- PHP 8.0
-  - Las extensiones `php8.0-mysqli` y `php8.0-xml` deben estar habilitadas.
-- Biblioteca NuSOAP
-- MySQL Server 8.0
-
-Para importar `storedb.sql` necesita primero crear la base de datos:
-```sql
-CREATE DATABASE storedb;
-```
-Luego ejecute este comando (reemplace en `username` por el nombre de usuario que use, por ejemplo: `root`):
-```bash
-mysql -u username -p storedb < storedb.sql 
+Ejecute el siguiente comando (debe tener instalado [Docker-Engine](https://docs.docker.com/engine/install/) y [Docker-Compose](https://docs.docker.com/compose/install/)):
+```sh
+docker-compose up --build -d
 ```
 
-**Nota:** No olvide modificar el archivo `config.php` de acuerdo a sus necesidades.
-
-Para ejecutar el cliente, simplemente especifique una categoría como argumento en el *script*:
-```bash
-php soapclient.php legumbres
-```
+**Nota:** No olvide cambiar el nombre del archivo `.env.example` a `.env`. 
