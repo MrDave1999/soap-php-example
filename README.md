@@ -20,7 +20,7 @@ docker run --rm -it -v $PWD:/app composer install
 ```
 cp .env.example .env
 ```
-**Nota:** En Windows use el comando `copy` en vez de `cp`.
+**Nota:** Si en Windows no funciona el comando `cp`, use `xcopy`.
 
 **5.** Construya la imagen e inicie los servicios:
 ```
