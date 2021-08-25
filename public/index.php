@@ -1,3 +1,3 @@
 <?php 
 require_once '../vendor/autoload.php';
-require_once '../soapserver.php';
+require_once '../app/soapserver.php';
