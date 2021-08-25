@@ -8,7 +8,7 @@ if(count($argv) === 1)
 }
 
 // Esta es la dirección URL de su servidor de servicios web WSDL
-$wsdl = 'http://localhost:8080?wsdl';
+$wsdl = 'http://app?wsdl';
 
 // Crear objeto cliente
 $client = new nusoap_client($wsdl, 'wsdl');
