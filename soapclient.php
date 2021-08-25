@@ -1,5 +1,5 @@
 <?php
-require_once './lib/nusoap.php';
+require_once 'vendor/autoload.php';
 
 if(count($argv) === 1)
 {
@@ -28,6 +28,7 @@ if ($err)
    exit();
 }
 var_dump($products);
+
 /*
 echo '<h2>Request</h2>';
 echo '<pre>' . htmlspecialchars($client->request, ENT_QUOTES) . '</pre>';

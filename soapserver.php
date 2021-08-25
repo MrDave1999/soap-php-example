@@ -1,5 +1,4 @@
 <?php
-require_once '../lib/nusoap.php';
 require_once '../product.php';
 
 // Crear la instancia del servidor
