@@ -30,3 +30,15 @@ docker-compose up --build -d
 ```
 http://localhost:8080/
 ```
+
+## Prueba
+
+Puedes usar el **cliente de prueba** para comprobar si todo está funcionando:
+```
+docker run --rm \
+    --network storeapp \
+    -w /app \
+    -v $PWD:/app \
+    php:8.0-apache \
+    php soapclient.php legumbres
+```
