@@ -1,0 +1,7 @@
+{
+  "require": {
+    "econea/nusoap": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
