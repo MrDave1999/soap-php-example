@@ -25,3 +25,7 @@ services:
 
 volumes:
   mysql_data:
+
+networks:
+  default:
+    name: 'storeapp'
