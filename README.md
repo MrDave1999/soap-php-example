@@ -26,3 +26,7 @@ cp .env.example .env
 ```
 docker-compose up --build -d
 ```
+**6.** Acceda a la aplicación de esta forma:
+```
+http://localhost:8080/
+```
