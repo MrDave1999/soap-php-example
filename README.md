@@ -35,10 +35,5 @@ http://localhost:8080/
 
 Puedes usar el **cliente de prueba** para comprobar si todo está funcionando:
 ```
-docker run --rm \
-    --network storeapp \
-    -w /app \
-    -v $PWD:/app \
-    php:8.0-apache \
-    php soapclient.php legumbres
+docker exec app php soapclient.php legumbres
 ```
