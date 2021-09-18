@@ -13,14 +13,26 @@ git clone https://github.com/MrDave1999/soap-php-example.git
 cd soap-php-example
 ```
 **3.** Instale las dependencias del proyecto:
+
+En Linux:
 ```
 docker run --rm -it -v $PWD:/app composer install
 ```
+En Windows:
+```
+docker run --rm -it -v %cd%:/app composer install
+```
+
 **4.** Copie el contenido de `.env.example` en `.env`:
+
+En Linux:
 ```
 cp .env.example .env
 ```
-**Nota:** Si en Windows no funciona el comando `cp`, use `xcopy`.
+En Windows:
+```
+xcopy .env.example .env
+```
 
 **5.** Construya la imagen e inicie los servicios:
 ```
@@ -35,5 +47,5 @@ http://localhost:8080/
 
 Puedes usar el **cliente de prueba** para comprobar si todo está funcionando:
 ```
-docker exec app php soapclient.php legumbres
+docker-compose exec app php soapclient.php legumbres
 ```
