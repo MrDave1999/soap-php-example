@@ -1,6 +1,7 @@
 {
   "require": {
-    "econea/nusoap": "dev-master"
+    "econea/nusoap": "dev-master",
+    "vlucas/phpdotenv": "^5.3"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
